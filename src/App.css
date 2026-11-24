@@ -1,0 +1,76 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.layout {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-view {
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.btn-add {
+  padding: 10px 22px;
+  background: #f17f46;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hotel-grid {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: 16px;
+}
+.hotel-grid h3{
+  display: flex;
+  align-items: start;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 16px;
+  margin-top: 80px;
+}
+
+.btn-back {
+  display: flex;
+  margin-left: -20px;
+  margin-right: auto;
+  align-items: start;
+  gap: 6px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  background: #f3f4f6;
+  color: #374151;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+

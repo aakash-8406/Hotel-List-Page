@@ -1,0 +1,112 @@
+.hotel-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 16px;
+}
+
+
+.hotel-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hotel-img {
+  width: 160px;
+  min-width: 160px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hotel-text {
+  flex: 1;
+  text-align: left;
+  min-width: 0;
+}
+
+.hotel-title {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.hotel-desc {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.hotel-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.hotel-location {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.hotel-price {
+  font-size: 15px;
+  font-weight: 700;
+  color: #262323;
+}
+
+.hotel-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.hotel-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn-edit {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #eff6ff;
+  color: #020202;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-delete {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #fef2f2;
+  color: #101010;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+
+.hotel-price-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.hotel-price-type {
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 400;
+}

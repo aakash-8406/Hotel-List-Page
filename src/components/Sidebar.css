@@ -1,0 +1,74 @@
+.sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px 20px;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: start;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-label {
+  display: flex;
+  align-items: start;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price-row {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.price-input {
+  width: 72px;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.price-sep {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.btn-clear {
+  width: 100%;
+  padding: 9px 0;
+  border: 1px solid #fca5a5;
+  background: #fef2f2;
+  color: #ef4444;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-clear:hover {
+  background: #fee2e2;
+}

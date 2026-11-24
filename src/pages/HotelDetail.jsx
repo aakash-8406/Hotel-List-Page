@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { Helmet } from 'react-helmet-async'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
@@ -37,6 +38,11 @@ function HotelDetail() {
 
   return (
     <div className="detail-page">
+      <Helmet>
+        <title>{hotel.title} — Hotel Details</title>
+        <meta name="description" content={hotel.description} />
+        <meta name="keywords" content={`${hotel.title}, hotel, accommodation, ${hotel.latitude}, ${hotel.longitude}`} />
+      </Helmet>
 
       <button className="btn-back" onClick={() => navigate('/')}>
         ← Back to List

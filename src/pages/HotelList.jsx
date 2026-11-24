@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import { Helmet } from 'react-helmet-async'
 import HotelForm from '../components/HotelForm.jsx'
 import HotelCard from '../components/HotelCard.jsx'
 import Sidebar from '../components/Sidebar.jsx'
@@ -54,6 +55,11 @@ function HotelList({ search }) {
 
   return (
     <div className="page">
+      <Helmet>
+        <title>Hotel List</title>
+        <meta name="description" content="Browse and search hotels. Filter by price, view locations and book your perfect stay." />
+        <meta name="keywords" content="hotels, hotel list, book hotel, hotel search" />
+      </Helmet>
 
       {showForm ? (
         <div className="form-view">

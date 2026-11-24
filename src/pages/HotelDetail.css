@@ -19,6 +19,11 @@
   cursor: pointer;
   transition: background 0.2s;
 }
+
+.btn-back:hover {
+  background: #e5e7eb;
+}
+
 .detail-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -75,6 +80,7 @@
 .detail-value {
   font-size: 14px;
   color: #374151;
+  text-align: right;
 }
 
 .detail-price {
@@ -122,4 +128,89 @@
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .detail-page {
+    padding: 20px 16px;
+  }
+
+  .detail-img {
+    height: 240px;
+  }
+
+  .detail-body {
+    padding: 20px 16px;
+  }
+
+  .detail-title {
+    font-size: 22px;
+  }
+
+  .detail-map {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-page {
+    padding: 16px 12px;
+  }
+
+  .detail-img {
+    height: 190px;
+  }
+
+  .detail-body {
+    padding: 16px 12px;
+  }
+
+  .detail-title {
+    font-size: 18px;
+  }
+
+  .detail-desc {
+    font-size: 14px;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .detail-value {
+    text-align: left;
+  }
+
+  .detail-price-stack {
+    align-items: flex-start;
+  }
+
+  .detail-price {
+    font-size: 17px;
+  }
+
+  .detail-map {
+    height: 220px;
+  }
+
+  .btn-back {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .detail-title {
+    font-size: 16px;
+  }
+
+  .detail-desc {
+    font-size: 13px;
+  }
+
+  .detail-map {
+    height: 180px;
+  }
 }

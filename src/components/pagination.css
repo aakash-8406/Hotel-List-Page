@@ -2,8 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   margin-top: 32px;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .page-btn {
@@ -15,16 +17,43 @@
   font-size: 14px;
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
+  min-width: 40px;
+  text-align: center;
+}
+
+.page-btn:hover:not(:disabled) {
+  background: #f3f4f6;
 }
 
 .page-btn.active {
-  background: #f17f46;;
+  background: #f17f46;
   color: #ffffff;
-  border-color: #f17f46;;
+  border-color: #f17f46;
   font-weight: 600;
 }
 
 .page-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .page-btn {
+    padding: 7px 10px;
+    font-size: 13px;
+    min-width: 34px;
+  }
+
+  .pagination {
+    gap: 4px;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-btn {
+    padding: 6px 8px;
+    font-size: 12px;
+    min-width: 30px;
+  }
 }

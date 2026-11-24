@@ -24,6 +24,8 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 28px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .btn-add {
@@ -36,31 +38,36 @@
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.btn-add:hover {
+  background: #e06b30;
 }
 
 .hotel-grid {
   display: flex;
-  text-align: start;
   flex-direction: column;
   gap: 16px;
 }
-.hotel-grid h3{
-  display: flex;
-  align-items: start;
+
+.hotel-grid h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
 }
 
 .empty-msg {
   text-align: center;
   color: #9ca3af;
   font-size: 16px;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .btn-back {
-  display: flex;
-  margin-left: -20px;
-  margin-right: auto;
-  align-items: start;
+  display: inline-flex;
+  align-items: center;
   gap: 6px;
   margin-bottom: 20px;
   padding: 8px 16px;
@@ -74,3 +81,53 @@
   transition: background 0.2s;
 }
 
+.btn-back:hover {
+  background: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 16px;
+  }
+
+  .layout {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-add {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 16px 12px;
+  }
+
+  .hotel-grid h2 {
+    font-size: 17px;
+  }
+
+  .empty-msg {
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  .btn-back {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .page {
+    padding: 12px 10px;
+  }
+}

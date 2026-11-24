@@ -7,8 +7,9 @@
   border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -21,6 +22,7 @@
 
 .nav-center {
   flex: 1;
+  min-width: 160px;
   max-width: 400px;
 }
 
@@ -43,6 +45,7 @@
 .nav-buttons {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .nav-btn {
@@ -54,6 +57,7 @@
   background: #fff;
   color: #374151;
   transition: background 0.2s;
+  white-space: nowrap;
 }
 
 .nav-btn-primary {
@@ -64,4 +68,49 @@
 
 .nav-btn-primary:hover {
   background: #e06b30;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .nav-center {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .nav-logo {
+    font-size: 16px;
+  }
+
+  .nav-btn {
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+
+  .nav-search-input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-logo {
+    font-size: 14px;
+  }
+
+  .nav-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 }
